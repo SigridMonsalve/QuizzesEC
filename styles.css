@@ -1,0 +1,44 @@
+body {
+  padding: 20px 0;
+  background: url("./space.jpg")
+}
+.row, .column {
+  display: inline-block;
+  float: left;
+}
+pre {
+  font-size: 20px;
+  color: white;
+}
+.row {
+  margin: 0 auto;
+}
+.column {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #1b2046;
+}
+.eve {
+  background: url("./eve.png");
+  background-position: top;
+  background-size: contain;
+}
+.trail:before, .trail:after {
+  position: relative;
+  display: inline-block;
+  content:'';
+  width: 70px;
+  height: 30px;
+  border: 2px solid #5fb8b5;
+  border-radius: 130px / 60px;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+}
+.trail:before {
+  top: 10px;
+  background: rgba(103,148,161,0.29);
+}
+.trail:after {
+  top: -10px;
+  background: rgba(17,108,122,0.34);
+}
